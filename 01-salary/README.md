@@ -69,13 +69,10 @@ _Jak se změnila průměrná mzda mezi lety 2014 a 2015?_
 
 # K zamyšlení
 
-1. Je nutné v našem případě načítat všechny informace o osobách do přepravek? % ne
-2. Je možné úkol splnit jedním průchodem bez další alokace paměti? % ano
-3. Jsou problémy které streamově nevyřešíme? % kolik je lidí, kteří pobírají podprůměrnou mzdu
-4. Jaká jsou pro a proti? % počty osob vs počty roků % pokud 1 spuštění = 1 odpověď je to v pořádku, pokud bychom se
-   opakovaně ptaly na různé otázky třeba i na stejné podmnožině osob, nemusíme soubor znovu otevírat a parsovat. Také
-   můžeme používat chytřejší struktury pro ukládání a zrychlit vyhledání / spočtení správné odpovědi.
-
+1. Je nutné v našem případě načítat všechny informace o osobách do přepravek? 
+2. Je možné úkol splnit jedním průchodem bez další alokace paměti?
+3. Jsou problémy které streamově nevyřešíme? 
+4. Jaká jsou pro a proti? 
 5. Když pracujeme jen s podskupinou, má smysl načíst jen podskupinu?
 6. Co je návratová hodnota programu? Jak ji nastavit? K čemu je to dobré?
 7. Přidat transformaci dat na každý prvek v poli
@@ -93,7 +90,7 @@ _Jak se změnila průměrná mzda mezi lety 2014 a 2015?_
 
 # Domácí cvičení Odpovězte na otázku:
 
-V roce 2013 byl nendostatek krve 0+. Kolik litrů krve mohlo transfůzní oddělení v obci Kamenice v tomto roce odebrat od
+V roce 2013 byl nendostatek krve 0+. Kolik litrů krve mohlo transfúzní oddělení v obci Kamenice v tomto roce odebrat od
 lidí?
 1. Darovat krev může každý muž či žena ve věku 18-65 let.
 2. Tělesná hmotnost dárce krve by měla být minimálně 50 kg.

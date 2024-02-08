@@ -25,7 +25,7 @@ https://github.com/JakubSido/example_package
 - https://www.w3schools.com/python
 
 ## Jak psát čitelný a dobře udržitelný kód? 
-Pyhton dává programátorovi velkou volnost. S velkou sílou přichází však i velká zodpovednost. Pokud vám záleží na tom, aby po vás byl kód čitelný, pro ostatní přehledný a dobře udržitelný, doporučujeme pročíst si [Google Python Style Guide](https://google.github.io/styleguide/pyguide.html)
+Pyhton dává programátorovi velkou volnost. S velkou sílou přichází však i velká zodpovědnost. Pokud vám záleží na tom, aby po vás byl kód čitelný, pro ostatní přehledný a dobře udržitelný, doporučujeme pročíst si [Google Python Style Guide](https://google.github.io/styleguide/pyguide.html)
 
 
 
