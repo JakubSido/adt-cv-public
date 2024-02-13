@@ -31,7 +31,7 @@ Vytvořte skript (textový soubor) se sekvencí příkazů, které vedou ke stej
 
 
 
-Vstupující [datový soubor](https://drive.google.com/file/d/1vPHJccjhV8e2mFxvDXSeoJiDe-BC1-VP/view?usp=drive_link)[^1] obsahuje 11M datových vzorků s informacemi o osobách a jejich příjmech v letech 2010-2020 (
+Vstupující datový soubor[^1] [[liks]](https://liks.fav.zcu.cz/adt/exam/service/download-data?filename=data-salaries-years-11M.csv) [[gapps]](https://drive.google.com/file/d/1vPHJccjhV8e2mFxvDXSeoJiDe-BC1-VP/view?usp=drive_link) obsahuje 11M datových vzorků s informacemi o osobách a jejich příjmech v letech 2010-2020 (
 11 let). Úkolem je vytvořit program, který načte záznamy a vypočte průměrný příjem osob splňující zadanou podmínku, s
 jeho pomocí bude snadné odpovídat na otázky jako:
 _Jak se změnila průměrná mzda mezi lety 2014 a 2015?_
@@ -70,7 +70,7 @@ _Jak se změnila průměrná mzda mezi lety 2014 a 2015?_
 # K zamyšlení
 
 1. Je nutné v našem případě načítat všechny informace o osobách do přepravek? 
-2. Je možné úkol splnit jedním průchodem bez další alokace paměti?
+2. Je možné úkol splnit jedním průchodem bez nutnosti načítat celá data do paměti?
 3. Jsou problémy které streamově nevyřešíme? 
 4. Jaká jsou pro a proti? 
 5. Když pracujeme jen s podskupinou, má smysl načíst jen podskupinu?
