@@ -31,7 +31,8 @@ Vytvořte skript (textový soubor) se sekvencí příkazů, které vedou ke stej
 
 
 
-Vstupující datový soubor[^1] [[liks]](https://liks.fav.zcu.cz/adt/exam/service/download-data?filename=data-salaries-years-11M.csv) [[gapps]](https://drive.google.com/file/d/1vPHJccjhV8e2mFxvDXSeoJiDe-BC1-VP/view?usp=drive_link) obsahuje 11M datových vzorků s informacemi o osobách a jejich příjmech v letech 2010-2020 (
+Vstupující datový soubor[^1] [[liks]](https://liks.fav.zcu.cz/adt/exam/service/download-data?filename=data-salaries-years-11M.csv) 
+obsahuje 11M datových vzorků s informacemi o osobách a jejich příjmech v letech 2010-2020 (
 11 let). Úkolem je vytvořit program, který načte záznamy a vypočte průměrný příjem osob splňující zadanou podmínku, s
 jeho pomocí bude snadné odpovídat na otázky jako:
 _Jak se změnila průměrná mzda mezi lety 2014 a 2015?_
