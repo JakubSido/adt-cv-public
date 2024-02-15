@@ -39,7 +39,7 @@ Datové struktury zvolte podle typu úkolu, který chcete řešit.
  class Record:
             ...
 ```
-4. Vytvořte funkci, která načtete data do vhodných datových struktur. Cestu k adresáři s daty přijme jako svůj parametr. Načtěme záznamy z celého měsíce. Doporučujeme roztřídit záznamy do slovníku podle pole ckpt. (I v našich strukturách zachovejme seřazení podle času,bude se nám hodit)
+4. Vytvořte funkci, která načte data do vhodných datových struktur. Cestu k adresáři s daty přijme jako svůj parametr. Načtěme záznamy z celého měsíce. Doporučujeme roztřídit záznamy do slovníku podle pole ckpt. (I v našich strukturách zachovejme seřazení podle času,bude se nám hodit)
 
 ```python
 def load_data(datapath:str ,city:str ,shop:str) -> dict[str, list[Record]]
@@ -74,7 +74,7 @@ def get_q_size(data :dict[str, list[Record]], seconds:int) -> int:
 def histogram(data :dict[str, list[Record]]):
 ```
 
-10. Ve funkci main vstupte do smyšky která bude od uživatele přijímat vstup (město,obchod) vypisovat pro ně histogram.
+10. Ve funkci main vstupte do smyčky která bude od uživatele přijímat vstup (město,obchod) vypisovat pro ně histogram.
 
 pozn. očekávanou funkčnost můžete porovnat s referenčním záznamem z Plzně, který je přiložen k datům. Např final_a - fronta před pokladnami v obchodu a atp. 
 ![reference](img/ref.png)
