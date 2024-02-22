@@ -27,7 +27,7 @@ Vytvořte skript (textový soubor) se sekvencí příkazů, které vedou ke stej
 
 
 
-# Jednoduchá aplikace pro analýzu databáze osob
+# 3. Jednoduchá aplikace pro analýzu databáze osob
 
 
 

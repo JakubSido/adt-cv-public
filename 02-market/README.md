@@ -68,7 +68,7 @@ def get_passed_set(data : dict[str, list[Record]],key_words:list[str]) -> set[in
 def get_q_size(data :dict[str, list[Record]], seconds:int) -> int:   
 ```
 
-9.  Vytvořte funkci, která na standardní výstup programu vypíše délku fronty pro každou celou hodinu.
+9.  Vytvořte funkci, která na standardní výstup programu vypíše délku fronty pro každou celou hodinu pro
 
 ```python
 def histogram(data :dict[str, list[Record]]):
