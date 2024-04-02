@@ -85,13 +85,12 @@ class SudokuSolver:
                 for value in numbers:
                     self.field[r][c] = value
                     if not self.check_one_cell(r, c):
-                        self.field[r][c] = EMPTY_VALUE
                         continue
                     solved = self.solve()
                     if solved:
                         return True
                     
-                    self.field[r][c] = EMPTY_VALUE
+                self.field[r][c] = EMPTY_VALUE
                 return False
         
 
