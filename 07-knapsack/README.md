@@ -3,7 +3,7 @@
 
 Fibonacciho posloupnost je dána rekurzivním předpisem:
 
-$$fib(n) = f ib(n − 1) + f ib(n − 2)$$
+$$fib(n) = fib(n − 1) + fib(n − 2)$$
 $$fib(0) = 0$$
 $$fib(1) = 1$$
 
@@ -25,7 +25,7 @@ def fib(n:int) -> int:
 Pokud zkusíme program spustit, zjistíme, že pro zvětšující se n je výpočet čísla velice neefektivní. Z výpočtového stromu je patrné, že počítáme stejnou věc několikrát, což vede na velice neefektivní výpočet. 
 
 
-2. Identifikujme, část výpočtu, který se opakuje a pokusíme se jej identifikovat. V našem případě je možné jej identifikovat číslem, který podstrom rozvíjí. Při prvním výpočtu jej můžeme podle tohoto identifikátoru uložit a příště už jej nepočítat. 
+2. Vyhledáme část výpočtu, která se opakuje a pokusíme se jí identifikovat. V našem případě je možné použít číslo, které podstrom rozvíjí. Při prvním výpočtu si můžeme výpočet uložit a příště už jej nepočítat. 
 
 3. Implementujme rekurzivní výpočet fibonačiho čísla s pamětí předchozích výpočtů. 
 
@@ -52,9 +52,9 @@ Data jsou uložena v jednoduchém textovém formátu kde na každé řádce jsou
 kde je uloženo hodnocení a čas ve formátu mm:ss. Implementujme načítání dat. 
 
 ```python
-def load_data(path) -> Tuple[List[float], List[float]]:
-    values : List[float]= [] # rating
-    weights : List[float]= [] # délky v sekundách
+def load_data(path) -> tuple[list[float], list[float]]:
+    values : list[float]= [] # rating
+    weights : list[float]= [] # délky v sekundách
     return values, weights
 ```
 
@@ -118,7 +118,7 @@ Dalo by se fibonacciho číslo vypočítat jinak?
 Dynamicé programování je velice mocná technika. Transformace úlohy pro aplikaci dynamického programování mnohdy není přímočará a identifikovat duplicitní část stavového prostoru úlohy je náročné a analýza úlohy  může vyžadovat nezanedbatelný čas a úsilí. To, jakým způsobem dokážeme úlohu analyzovat a identifikovat v ní opakující se výpočty, navíc je použít pro urychlení výpočtu s minimální paměťovou náročností je to, čeho bychom chtěli dosáhnout. 
 
 
-# Další cvičneí
+# Další cvičeí
 1. Implementujte hladový algoritmus pro úlohu párty mixu. 
     - změřte rychlost a správnost řešení. 
     - jakou cenu platíme za rychlost/správné řešení
