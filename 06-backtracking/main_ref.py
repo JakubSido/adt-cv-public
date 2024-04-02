@@ -1,6 +1,6 @@
 import random
 import numpy as np
-
+import os
 EMPTY_VALUE = 0
 
 class SudokuSolver:
@@ -43,7 +43,7 @@ class SudokuSolver:
 
     def check_one_cell(self, row_index:int , column_index:int):
         
-        if self.check_row(row_index) & self.check_column(column_index) & self.check_block(row_index, column_index):
+        if self.check_row(row_index) and self.check_column(column_index) and self.check_block(row_index, column_index):
             return True
         
         return False
@@ -114,10 +114,13 @@ class SudokuSolver:
 
 def main():    
     sudoku_solver = SudokuSolver()
-    # sudoku_solver.load("sudoku.csv")
-    
-    print(sudoku_solver.solve())
-    print(sudoku_solver.field)
+
+    for sudoku_file in os.listdir("data"):
+        file = os.path.join("data", sudoku_file)
+        print("solving: ", file)
+        sudoku_solver.load(file)
+        print(sudoku_solver.solve())
+        print(sudoku_solver.field)
     
 if __name__ == "__main__":
     main()
