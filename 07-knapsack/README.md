@@ -118,7 +118,7 @@ Dalo by se fibonacciho číslo vypočítat jinak?
 Dynamicé programování je velice mocná technika. Transformace úlohy pro aplikaci dynamického programování mnohdy není přímočará a identifikovat duplicitní část stavového prostoru úlohy je náročné a analýza úlohy  může vyžadovat nezanedbatelný čas a úsilí. To, jakým způsobem dokážeme úlohu analyzovat a identifikovat v ní opakující se výpočty, navíc je použít pro urychlení výpočtu s minimální paměťovou náročností je to, čeho bychom chtěli dosáhnout. 
 
 
-# Další cvičeí
+# Další cvičení
 1. Implementujte hladový algoritmus pro úlohu párty mixu. 
     - změřte rychlost a správnost řešení. 
     - jakou cenu platíme za rychlost/správné řešení
