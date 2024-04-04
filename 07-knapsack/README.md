@@ -91,6 +91,23 @@ def fib_cache(n:int) -> int:
 ```
 
 
+
+
+# Fibonacci jinak 
+Dalo by se fibonacciho číslo vypočítat jinak? 
+- ne shora ale odspodu? 
+- s minimální užitou pamětí pro ukládání předchozích výpočtů? 
+
+Dynamické programování je velice mocná technika. Transformace úlohy pro aplikaci dynamického programování mnohdy není přímočará a identifikovat duplicitní část stavového prostoru úlohy je náročné a analýza úlohy  může vyžadovat nezanedbatelný čas a úsilí. To, jakým způsobem dokážeme úlohu analyzovat a identifikovat v ní opakující se výpočty, navíc je použít pro urychlení výpočtu s minimální paměťovou náročností je to, čeho bychom chtěli dosáhnout. 
+
+
+
+# Další cvičení
+1. Implementujte hladový algoritmus pro úlohu párty mixu. 
+    - změřte rychlost a správnost řešení. 
+    - jakou cenu platíme za rychlost/správné řešení
+2. Jaké písničky do mixu vlastně zařadit? Z naší implementace víme, jaká bude jeho hodnota, samotné písničky ale nikam neukládáme. 
+
 # Motivace a Další materiály
 
 
@@ -107,20 +124,6 @@ Příklady, kde se DP používá:
 
 - Více okolo DP https://www.youtube.com/watch?v=Hdr64lKQ3e4
 
-
-
-# Fibonacci jinak 
-Dalo by se fibonacciho číslo vypočítat jinak? 
-- ne shora ale odspodu? 
-- s minimální užitou pamětí pro ukládání předchozích výpočtů? 
-
-Dynamické programování je velice mocná technika. Transformace úlohy pro aplikaci dynamického programování mnohdy není přímočará a identifikovat duplicitní část stavového prostoru úlohy je náročné a analýza úlohy  může vyžadovat nezanedbatelný čas a úsilí. To, jakým způsobem dokážeme úlohu analyzovat a identifikovat v ní opakující se výpočty, navíc je použít pro urychlení výpočtu s minimální paměťovou náročností je to, čeho bychom chtěli dosáhnout. 
-
-
-# Další cvičení
-1. Implementujte hladový algoritmus pro úlohu párty mixu. 
-    - změřte rychlost a správnost řešení. 
-    - jakou cenu platíme za rychlost/správné řešení
 
 
 # Apendix
