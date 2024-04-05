@@ -5,11 +5,10 @@ EMPTY_VALUE = 0
 
 class SudokuSolver:
 
-    def __init__(self, field:np.ndarray|None=None, n_rows:int=9, n_columns:int=9):
+    def __init__(self, n_rows:int=9, n_columns:int=9):
 
-        if field is None:
-            field = np.zeros([n_rows, n_columns], dtype=int)
-        self.field = field
+        self.field = np.zeros([n_rows, n_columns], dtype=int)
+         
         self.n_rows = n_rows
         self.n_columns = n_columns
 
@@ -61,7 +60,6 @@ class SudokuSolver:
         column = self.field[:, column_index]
         return self.check_sequence(column)
         
-        pass
 
     def check_block(self, row_index:int, column_index:int):
         
@@ -70,7 +68,6 @@ class SudokuSolver:
         block = self.field[row_start: row_start + 3, column_start: column_start + 3]
         return self.check_sequence(block.reshape(-1))
         
-        pass
 
     def solve(self): 
         
