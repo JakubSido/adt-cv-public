@@ -64,7 +64,7 @@ def load_data(path) -> tuple[list[float], list[float]]:
 Úlohu lze řešit poměrně jednoduše s využitím algoritmu navracení, kdy vyzkoušíme zkrátka
 všechny možnosti podobně jako v předchozí úloze. To znamená, vyzkoušíme všechny kombinace
 rozhodnutí, kdy každou skladbu buď na mix zařadíme a nebo ne. Složitost takového řešení je tedy
-O(2n) kde n je počet skladeb. Toto řešení ale není efektivní. Jeho nevýhody ukazuje následující strom řešení pro zjednodušený příklad, kde máme tři písničky, všechny jsou čtyři minuty dlouhé a vytváříme osmiminutový mix.
+$O(2^n)$ kde n je počet skladeb. Toto řešení ale není efektivní. Jeho nevýhody ukazuje následující strom řešení pro zjednodušený příklad, kde máme tři písničky, všechny jsou čtyři minuty dlouhé a vytváříme osmiminutový mix.
 
 V každém kroku musíme vybrat lepší ze dvou možností, buďto danou skladbu do mixu přidáme,
 nebo ne. řešení K(0, 8) znamená že se rozhodujeme o první skladbě a 8 minut do kterých vkládáme.
