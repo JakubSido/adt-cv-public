@@ -53,18 +53,15 @@ Pyhton dává programátorovi velkou volnost. S velkou sílou přichází však 
 
 ## Závažné chyby: mohou být důvodem ke znemožnění hodnocení nebo snížení bodového ohodnocení části vaší práce. 
 
-1. Data jsou načtena pouze částečně nebo ve formátu, který neodpovídá zadání.
-2. Program řeší zadanou úlohu nekompletně, nebo řešení neodpovídá očekávanému výstupu.
-
-3. Neošetřený vstup programu (např. chybějící kontrola parametrů předaných z příkazové řádky).
-4. Málo obecný algoritmus. Program funguje pouze na konkrétních vstupech a není dobře přenositelný. Např:
+1. Neošetřený vstup programu (např. chybějící kontrola parametrů předaných z příkazové řádky).
+2. Málo obecný algoritmus. Program funguje pouze na konkrétních vstupech a není dobře přenositelný. Např:
     - Předpoklady, které vedou k nemožnosti spustit program s jiným vstupním souborem. 
     ```python
     # nefunkční, pokud bude pokladen více, nebo nebudou číslované od 0 
     if (i.ckpt == "vege_0" or i.ckpt == "vege_1")
     ```
 
-5. Špatná práce s cestami k souborům nebo složkám, která vede na nemožnost spuštění programu na jiném počítači, s jinými daty nebo v jiném adresáři. Např:
+3. Špatná práce s cestami k souborům nebo složkám, která vede na nemožnost spuštění programu na jiném počítači, s jinými daty nebo v jiném adresáři. Např:
     
     - například spojování cest pomocí řetězců, které jsou závislé na platformě,
     ```python
@@ -78,7 +75,7 @@ Pyhton dává programátorovi velkou volnost. S velkou sílou přichází však 
     data_path = f"C:\\Users\\klokan\\{city}\\{day}\\{shop}.txt"   
     data_path = f"/home/klokan/data-adt/{city}/{day}/{shop}.txt"   
     ```
-6. Špatná dekompozice řešení
+4. Špatná dekompozice řešení
     - V programu jsou špatně volané funkce. Např:
         - nepoužívá návratové hodnoty,
         - namísto předaných parametrů používá globální proměnné.
