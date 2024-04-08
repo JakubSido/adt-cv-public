@@ -29,11 +29,14 @@ Pyhton dává programátorovi velkou volnost. S velkou sílou přichází však 
 
 
 # Chybovník
+
+
 ## Chyby neslučitelné se získáním zápočtu
 1. Plagiátorství
 2. Porušení pravidel nastavených pro vypracování úloh. 
 
-## Velmi závažné chyby: jsou důvodem k dalšímu nehodnocení práce
+## Velmi závažné chyby: Jsou důvodem k dalšímu nehodnocení konkrétní práce
+
 1. Nevalidní kód
     - Odevzdané zdrojové kódy nejsou validním kódem v jazyce Python - znemožňují spuštění programu.   
 
@@ -48,15 +51,34 @@ Pyhton dává programátorovi velkou volnost. S velkou sílou přichází však 
     - Program obsahuje nekonečnou smyčku, nebo je řádově pomalejší než by měl být například v důsledku neefektivního algoritmu. 
 
 
-## Závažné chyby: mohou být důvodem ke znemožnění hodnocení nebo snížení bodového ohodnocení části vaší práce.
+## Závažné chyby: mohou být důvodem ke znemožnění hodnocení nebo snížení bodového ohodnocení části vaší práce. 
 
 1. Data jsou načtena pouze částečně nebo ve formátu, který neodpovídá zadání.
-2. Program řeší zadanou úlohu nekompletně, nebo řešení neodpovídá očekávanému výstupu. 
-3. Špatná dekompozice řešení.     
-4. Neošetřený vstup programu (např. chybějící kontrola parametrů předaných z příkazové řádky).
-5. Málo obecný algoritmus. 
-    - program funguje pouze na konkrétních vstupech a není dobře přenositelný. 
-6. Špatná práce s cestami k souborům nebo složkám, která vede na nemožnost spuštění programu na jiném počítači, s jinými daty nebo v jiném adresáři.
-7. Program pracuje špatně při volání funkcí.  
-    - například nepoužívá návratové hodnoty
-    - namísto předaných parametrů používá globální proměnné
+2. Program řeší zadanou úlohu nekompletně, nebo řešení neodpovídá očekávanému výstupu.
+
+3. Neošetřený vstup programu (např. chybějící kontrola parametrů předaných z příkazové řádky).
+4. Málo obecný algoritmus. Program funguje pouze na konkrétních vstupech a není dobře přenositelný. Např:
+    - Předpoklady, které vedou k nemožnosti spustit program s jiným vstupním souborem. 
+    ```python
+    # nefunkční, pokud bude pokladen více, nebo nebudou číslované od 0 
+    if (i.ckpt == "vege_0" or i.ckpt == "vege_1")
+    ```
+
+5. Špatná práce s cestami k souborům nebo složkám, která vede na nemožnost spuštění programu na jiném počítači, s jinými daty nebo v jiném adresáři. Např:
+    
+    - například spojování cest pomocí řetězců, které jsou závislé na platformě,
+    ```python
+    # platformě závislé spojování cest
+    data_path = data_root +"\\"+ city + "\\"+ day 
+    ```
+    
+    - absolutní cesty závislé na konkrétním počítači a platformě.
+    ```python 
+    # nefunkční pro data kdekoli jinde (nevíc platformě závislé spojení cesty)
+    data_path = f"C:\\Users\\klokan\\{city}\\{day}\\{shop}.txt"   
+    data_path = f"/home/klokan/data-adt/{city}/{day}/{shop}.txt"   
+    ```
+6. Špatná dekompozice řešení
+    - V programu jsou špatně volané funkce. Např:
+        - nepoužívá návratové hodnoty,
+        - namísto předaných parametrů používá globální proměnné.
