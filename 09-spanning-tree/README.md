@@ -87,3 +87,37 @@ Algoritmus pracuje s množinou objevených uzlů a hran k nim vedoucích
     - hledáme vždy tu nejlevnější tedy je vhodné použít prioritní frontu (PriorityQueue z balíku queue)
     - do prioritní fronty přidávejme hranu jako tuple (weight, (from_id, to_id),)
 
+
+# K zamyšlení
+1. co kdybychom nepoužili prioritní frontu? dostaneme kostru? A/N
+2. jakou kostru dostaneme? 
+
+3. Jaký je vztah mezi mezi kostrou a nejkratší cestou?
+4. Je např. pravda, že po kostře vede nejkratší cesta mezi vrcholy? 
+
+4. Ohodnocení hrany může mít různé významy:
+    - hledám nejkratší cestu? potom jsou to asi kilometry
+    - hledám nejrychlejší cestu? může mne zajímat i povolená rychlost na daném úseku 
+    - v sociálních sítích bude hrana obsahovat mnohem více informací. 
+        - typ vztahu (rodina-sourozenec, partner), 
+        - datum vzniku, 
+        - datum ukončení
+        
+
+5. K čemu se dá použít kostra? 
+    - Návrh elektrické rozvodné sítě
+    - Odvodňovací kanály
+    - Síťová konektivita
+     
+    
+
+
+např : 
+graph_grid_s3.json
+
+![img](img/sp1.png)
+
+graph_grid_s3_3.json
+
+![img](img/sp2.png)
+
