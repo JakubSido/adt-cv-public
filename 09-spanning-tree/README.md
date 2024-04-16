@@ -69,10 +69,9 @@ painter = adthelpers.painter.Painter(graph)
 ```
 
 # Prim-Jarníkův algoritmus
-Najde minimální kostru
-Implementujte Prim-Jarníkův algoritmus pomocí námi implementované reprezentace grafu
-    - Co je kostra? 
-    - Záleží kde začnu?
+Najde minimální kostru. Implementujte Prim-Jarníkův algoritmus pomocí námi implementované reprezentace grafu
+- Co je kostra? 
+- Záleží kde začnu?
 
 ## Algoritmus
 Algoritmus pracuje s množinou objevených uzlů a hran k nim vedoucích
