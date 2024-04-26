@@ -11,14 +11,12 @@ from queue import PriorityQueue
 
 class Node:
     def __init__(self, id) -> None:
-        # TODO 1
         self.id: int = id  # identifikátor uzlu
         self.neighbors: list[tuple[float, Node]] = list()  # (váha hrany, (kam_se_dostanu))
 
 
 class Graph:
     def __init__(self) -> None:
-        
         self.nodes: dict[int, Node] = dict()
         self.edges: set = set()
         
@@ -26,13 +24,11 @@ class Graph:
         self.nodes[node.id] = node          
 
     def __add_edge(self, src: Node, dst: Node, weight: float = 0):
-        
         src.neighbors.append((weight, dst))
         dst.neighbors.append((weight, src))
         self.edges.add((weight, src, dst))
         
     def create_edge(self, src_id: int, dst_id: int, weight: float = 0):
-        
         if src_id not in self.nodes:
             src_node = Node(src_id)
             self.__add_node(src_node)
@@ -44,8 +40,6 @@ class Graph:
         
 
 def load_graph(filepath: str) -> Graph:
-    # TODO 5
-    
     graph = Graph()
     with open(filepath, "r", encoding="utf8") as fd:
         file_string = fd.read()
@@ -105,7 +99,6 @@ def find_spanning_tree(graph: Graph) -> set[tuple[int, int]]:
     
 
 def main():
-
     graph = load_graph("data/graph_grid_s3_3.json")
     painter = adthelpers.painter.Painter(graph)
     painter.draw_graph()
